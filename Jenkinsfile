@@ -2,25 +2,18 @@ pipeline {
     agent any
 
     environment {
-        PLAYWRIGHT_BROWSERS_PATH = "/root/.cache/ms-playwright"  // Adjust if needed
+        PLAYWRIGHT_BROWSERS_PATH = "/root/.cache/ms-playwright"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git'  // Replace with actual repo
+                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git', credentialsId: 'github-token'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                script {
-                    def nodeInstalled = sh(script: 'node -v', returnStatus: true)
-                    if (nodeInstalled != 0) {
-                        sh 'curl -fsSL https://deb.nodesource.com/setup_18.x | bash -'
-                        sh 'sudo apt-get install -y nodejs'
-                    }
-                }
                 sh 'npm install'
                 sh 'npx playwright install --with-deps'
             }
