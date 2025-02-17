@@ -1,4 +1,3 @@
-cat <<EOF > README.md
 # Playwright E2E Test Automation Framework for Para Bank
 
 ## **Project Overview**
@@ -49,7 +48,7 @@ The framework also includes API test automation for verifying transaction histor
  ┃ ┣ 📜 HomePage.ts
  ┃ ┣ 📜 FindTransactionsPage.ts
  ┃ ┣ 📜 RegisterationPage.ts
- ┣ 📂 tests               # Test case files
+ ┣ 📂 tests/📂 ui              # Test case files
  ┃ ┣ 📜 account.spec.ts   
  ┃ ┣ 📜 create-user.spec.ts       
  ┃ ┣ 📜 global-nav.spec.ts       
