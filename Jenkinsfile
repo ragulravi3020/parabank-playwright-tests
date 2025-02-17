@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         PLAYWRIGHT_BROWSERS_PATH = "/root/.cache/ms-playwright"
-        GITHUB_TOKEN = credentials('github-tokens')
+        GITHUB_TOKEN = credentials('github-tokeno')
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git', credentialsId: 'github-tokens'
+                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git', credentialsId: 'github-tokeno'
             }
         }
 
