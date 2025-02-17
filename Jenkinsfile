@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         PLAYWRIGHT_BROWSERS_PATH = "/root/.cache/ms-playwright"
+        GITHUB_TOKEN = credentials('github-tokens')
     }
 
     stages {
