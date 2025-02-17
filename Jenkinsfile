@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git', credentialsId: 'github-token'
+                git branch: 'main', url: 'https://github.com/ragulravi3020/parabank-playwright-tests.git', credentialsId: 'github-tokens'
             }
         }
 
