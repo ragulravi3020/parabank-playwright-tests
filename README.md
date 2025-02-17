@@ -38,7 +38,6 @@ The framework also includes API test automation for verifying transaction histor
 ---
 
 ## **3️⃣ Project Structure**
-\`\`\`
 📦 para-bank-test-framework
  ┣ 📂 pages               # Page Object Model (POM) classes
  ┃ ┣ 📜 LoginPage.ts
@@ -60,7 +59,6 @@ The framework also includes API test automation for verifying transaction histor
  ┣ 📜 playwright.config.ts # Playwright configuration
  
  ┣ 📜 README.md           # Project documentation
-\`\`\`
 
 ---
 
@@ -71,16 +69,16 @@ The framework also includes API test automation for verifying transaction histor
 
 ### **Installation Steps**
 1. Clone the repository:
-   \`\`\`sh
+   \`\`\`
    git clone https://github.com/ragulravi3020/parabank-playwright-tests.git
    cd para-bank-test-framework
    \`\`\`
 2. Install dependencies:
-   \`\`\`sh
+   \`\`\`
    npm install
    \`\`\`
 3. Install Playwright Browsers:
-   \`\`\`sh
+   \`\`\`
    npx playwright install
    \`\`\`
 
@@ -88,31 +86,26 @@ The framework also includes API test automation for verifying transaction histor
 
 ## **5️⃣ Running the Tests**
 ### **Run All Tests**
-\`\`\`sh
+\`\`\`
 npx playwright test
 \`\`\`
 
 ### **Run UI Tests Only**
-\`\`\`sh
+\`\`\`
 npx playwright test tests/account.spec.ts
 \`\`\`
 
-### **Run API Tests Only**
-\`\`\`sh
-npx playwright test tests/api.spec.ts
-\`\`\`
-
 ### **Run Tests in Headed Mode (with UI)**
-\`\`\`sh
+\`\`\`
 npx playwright test --headed
 \`\`\`
 
 ### **Run Tests with HTML Report**
-\`\`\`sh
+\`\`\`
 npx playwright test --reporter=html
 \`\`\`
 After execution, open the report:
-\`\`\`sh
+\`\`\`
 npx playwright show-report
 \`\`\`
 
@@ -127,7 +120,7 @@ This framework can be **integrated with Jenkins** to trigger test execution from
 2. **Configure a Jenkins Job**:
    - Set up a **Pipeline Job**.
    - Use the following script to execute tests:
-     \`\`\`sh
+     \`\`\`
      npm install
      npx playwright install
      npx playwright test
@@ -156,8 +149,7 @@ This framework can be **integrated with Jenkins** to trigger test execution from
 
 ## **9️⃣ Contact**
 For any queries or enhancements, reach out via:
-- **Email**: your.email@example.com
+- **Email**: ragulravi3020@gmail.com
 - **GitHub Issues**: [Open an issue](https://github.com/ragulravi3020/parabank-playwright-tests/issues)
 
 🚀 **Happy Testing with Playwright!** 🎭
-EOF
